@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Walk Route</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="pannellum/pannellum.css">
+    <script src="pannellum/pannellum.js"></script>
+</head>
+
+<body>
+
+<div class="map-container">
+    <img src="images/thewalktribeafricaroute.png" class="route-map">
+
+    <!-- HOTSPOTS -->
+    <div class="hotspot" style="top:81.8%; left:90.7%;" 
+         onclick="openCorner('corner1')"></div>
+
+    <div class="hotspot" style="top:34%; left:92%;" 
+         onclick="openCorner('corner2')"></div>
+
+    <div class="hotspot" style="top:4.9%; left:31.5%;" 
+         onclick="openCorner('corner3')"></div>
+
+    <div class="hotspot" style="top:11%; left:14.5%;" 
+         onclick="openCorner('corner4')"></div>
+         
+    <div class="hotspot" style="top:30.6%; left:6.7%;" 
+         onclick="openCorner('corner5')"></div>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <div id="panorama"></div>
+
+    <div class="gallery">
+        <img id="photo1">
+        <img id="photo2">
+        <img id="photo3">
+    </div>
+</div>
+
+<!-- IMAGE VIEWER -->
+<div id="imageViewer" class="image-viewer">
+    <span class="close" onclick="closeImageViewer()">×</span>
+    <img id="viewerImage">
+</div>
+
+
+
+<script src="js/gallery.js"></script>
+</body>
+</html>
